@@ -69,32 +69,50 @@
             /></span>
           </a>
         </div>
-        <div class="nav-toggler">
-          <span></span>
-        </div>
+        <div class="nav-toggler"></div>
         <ul class="nav">
           <li>
-            <a href="#home" class="active menu-link" id="home">
+            <a
+              href="#home"
+              class="active menu-link"
+              id="home"
+              data-target="home"
+            >
               <i class="fa fa-home"></i>Home
             </a>
           </li>
           <li>
-            <a href="#about" class="menu-link" id="about">
+            <a href="#about" class="menu-link" data-target="about" id="about">
               <i class="fa fa-user"></i> About
             </a>
           </li>
           <li>
-            <a href="#service" class="menu-link" id="service">
+            <a
+              href="#service"
+              class="menu-link"
+              data-target="service"
+              id="service"
+            >
               <i class="fa fa-list"></i> Services
             </a>
           </li>
           <li>
-            <a href="#portfolio" class="menu-link" id="portfolio">
+            <a
+              href="#portfolio"
+              class="menu-link"
+              data-target="portfolio"
+              id="portfolio"
+            >
               <i class="fa fa-briefcase"></i> Portfolio
             </a>
           </li>
           <li>
-            <a href="#contact" class="menu-link" id="contact">
+            <a
+              href="#contact"
+              class="menu-link"
+              data-target="contact"
+              id="contact"
+            >
               <i class="fa fa-comments"></i> Contact
             </a>
           </li>
@@ -109,7 +127,7 @@
     <!-- ==== Main Content Start ==== -->
     <div class="main-content">
       <!-- === Home Section Start ==== -->
-      <section class="home section">
+      <section class="home section hidden">
         <div class="container">
           <div class="row">
             <div class="home-info padd-15">
@@ -120,8 +138,12 @@
                 I'm a <span class="typing">web designer</span>
               </h3>
               <p>
-                I'm a Web Designer with extensive experience for over 10 years.
-                My expertise is to create web designs, graphic designs and more
+                Hey there! I'm a dynamic web developer with 7 years of mastery
+                in HTML, CSS, JavaScript, and WordPress. Beyond coding, I'm a
+                passionate dancer, grooving to creativity. Recently delving into
+                photography, I'm capturing moments through a lens. Excited to
+                blend tech prowess with artistic flair for compelling online
+                experiences!
               </p>
               <a href="#contact" class="btn hire-me">Hire Me</a>
             </div>
@@ -133,7 +155,7 @@
       </section>
 
       <!-- ==== About Content Start ==== -->
-      <section class="about section">
+      <section class="about section hidden">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -349,7 +371,7 @@
       <!-- ==== About Content End ==== -->
 
       <!-- ==== Services Section Start ==== -->
-      <section class="service section">
+      <section class="service section hidden">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -451,7 +473,7 @@
       <!-- ==== Services Section End ==== -->
 
       <!-- ==== Portfolio Section Start ==== -->
-      <section class="portfolio section">
+      <section class="portfolio section hidden">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -530,7 +552,7 @@
       <!-- ==== Portfolio Section End ==== -->
 
       <!-- ==== Contact Section Start ==== -->
-      <section class="contact section">
+      <section class="contact section hidden">
         <div class="container">
           <div class="row">
             <div class="section-title padd-15">
@@ -657,7 +679,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="js/script.js"></script>
+    <script src="js/controller.js"></script>
     <script src="js/style-switcher.js"></script>
   </body>
 </html>
