@@ -19,6 +19,13 @@ function removeHidden(section) {
     if (currentSection.classList.contains(section)) {
       // Display the current section
       currentSection.classList.remove("hidden");
+
+      // Add Fade In Effect To The Target Section
+      currentSection.style.opacity = "0";
+      currentSection.style.visibility = "visible";
+      setTimeout(function () {
+        currentSection.style.opacity = "1";
+      });
     } else {
       // Hide other sections
       currentSection.classList.add("hidden");
@@ -71,11 +78,9 @@ function startPreloader() {
 
 async function displaySection() {
   const menuLinks = document.querySelectorAll(".menu-link");
+  const section = document.querySelectorAll(".section");
 
   // Show Preloader
-  startPreloader();
-
-  // Display Home Page
 
   menuLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -94,15 +99,6 @@ async function displaySection() {
 
       // Remove Hidden from Home Section by default
       removeHidden(target);
-
-      // When Menu Item Clicked Add Hidden to current page
-
-      // Remove Hidden from destination page
-
-      // Add 'Active' class to the clicked menu item
-
-      removeHidden(target);
-      console.log(target);
     });
   });
 }
